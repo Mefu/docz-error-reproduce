@@ -1,0 +1,12 @@
+# IDE / Editor related
+,vscode/
+.idea
+
+# OS specific
+.DS_STORE
+
+# npm/yarn stuff
+node_modules/
+
+# log files
+*.log

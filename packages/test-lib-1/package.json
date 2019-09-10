@@ -1,0 +1,39 @@
+{
+  "name": "test-lib-1",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "lib"
+  ],
+  "main": "lib/commonjs/lib-index.js",
+  "module": "lib/esm/lib-index.js",
+  "sideEffects": false,
+  "dependencies": {
+    "core-js": "3.2.1",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "regenerator-runtime": "0.13.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/cli": "7.6.0",
+    "@babel/plugin-proposal-export-default-from": "7.5.2",
+    "@babel/plugin-proposal-export-namespace-from": "7.5.2",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/preset-env": "7.6.0",
+    "@babel/preset-react": "7.0.0",
+    "docz": "2.0.0-rc.38",
+    "rollup": "1.21.2",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-delete": "1.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-sourcemaps": "0.4.2"
+  },
+  "scripts": {
+    "build:lib": "rollup -c rollup.config.js",
+    "start:docz": "yarn build:lib && FORCE_COLOR=1 docz dev | cat"
+  }
+}

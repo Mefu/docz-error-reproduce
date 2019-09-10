@@ -1,0 +1,19 @@
+---
+name: Button
+---
+
+import { Playground, Props } from 'docz';
+import { Button } from '..';
+
+# Button
+
+This component is used for bla bla.
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button disabled={false} onClick={() => console.log('CLICKED!')}>Click me</Button>
+  <Button disabled={true} onClick={() => console.log('SHOULD NOT CLICK')}>Click me</Button>
+</Playground>
