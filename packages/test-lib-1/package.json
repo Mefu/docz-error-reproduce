@@ -34,6 +34,6 @@
   },
   "scripts": {
     "build:lib": "rollup -c rollup.config.js",
-    "start:docz": "yarn build:lib && FORCE_COLOR=1 docz dev | cat"
+    "start:docz": "yarn build:lib && docz dev"
   }
 }
