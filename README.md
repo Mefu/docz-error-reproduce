@@ -1,6 +1,6 @@
 ## What is this?
 
-This is a repo to reproduce issue reported in docz here.
+This is a repo to reproduce issue reported in docz [here](https://github.com/doczjs/docz/issues/1094).
 
 ## To reproduce error with docz@next
 
